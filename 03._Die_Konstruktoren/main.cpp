@@ -10,7 +10,7 @@ int main() {
     Person person2; // Erstellen eines Objekts mit Standardkonstruktor
     person2.ausgeben(); // Ausgabe der Personendaten
 
-    Person person3 = person1; // Erstellen eines Objekts mit Kopierkonstruktor
+    Person person3(person1); // Erstellen eines Objekts mit Kopierkonstruktor
     person3.ausgeben(); // Ausgabe der Personendaten von person3
 
     return 0;
