@@ -3,37 +3,31 @@
 
 using namespace std;
 
-// Standardkonstruktor
 Person::Person() {
-    name = "Unbekannt"; // Setze den Namen auf "Unbekannt"
-    alter = 0; // Setze das Alter auf 0
+    name = "Unbekannt"; 
+    alter = 0;
 }
 
-// Parameterkonstruktor
 Person::Person(string n, int a) {
-    name = n; // Setze den Namen
-    alter = a; // Setze das Alter
+    name = n; 
+    alter = a; 
 }
 
-// Kopierkonstruktor
 Person::Person(const Person& other) {
-    name = other.name; // Kopiere den Namen vom anderen Objekt
-    alter = other.alter; // Kopiere das Alter vom anderen Objekt
+    name = other.name;
+    alter = other.alter; 
 }
 
-// Getter für den Namen
 string Person::getName() const {
-    return name; // Gebe den Namen zurück
+    return name; 
 }
 
-// Setter für den Namen
 void Person::setName(const string& n) {
-    name = n; // Setze den Namen
+    name = n; 
 }
 
-// Getter für das Alter
 int Person::getAlter() const {
-    return alter; // Gebe das Alter zurück
+    return alter; 
 }
 
 // Setter für das Alter
@@ -58,10 +52,11 @@ void Person::set_Alter(int a) {
     }
     else {
         cout << "Das Alter muss positiv sein!" << endl; // Ausgabe einer Warnung
+        alter = 0; // Standardwert für das Alter MUSS hier gesetzt werden.
     }
 }
 
-// Methode zur Ausgabe der Personendaten
+
 void Person::ausgeben() {
     cout << "Name: " << name << ", Alter: " << alter << endl;
 }
