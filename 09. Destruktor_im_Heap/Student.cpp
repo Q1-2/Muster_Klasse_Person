@@ -1,21 +1,20 @@
 #include "Student.h"
 
-// Konstruktor
 Student::Student(string n, int anzahl) {
-    name = n; // Setze den Namen
-    anzahlNoten = anzahl; // Setze die Anzahl der Noten
-    noten = new int[anzahlNoten]; // Reserviere Speicher für die Noten
+    name = n; 
+    anzahlNoten = anzahl; 
+    noten = new int[anzahlNoten]; 
     for (int i = 0; i < anzahlNoten; i++) {
-        noten[i] = 0; // Initialisiere die Noten mit 0
+        noten[i] = 0; 
     }
 
     cout << "Konstruktor wurde aufgerufen von Objekt: " << this << endl;
 }
 
-// Destruktor
+
 Student::~Student() {
-    delete[] noten; // Gib den reservierten Speicher für die Noten frei
-    noten = nullptr; // Setze den Zeiger auf nullptr, um sicherzustellen, dass er nicht mehr verwendet wird
+    delete[] noten; 
+    noten = nullptr; 
 
     cout << "Destruktor wurde aufgerufen von Objekt:  " << this << endl;
 }
@@ -30,10 +29,10 @@ void Student::setName(string n)
     name = n;
 }
 
-// Methode zum Setzen einer Note
+
 void Student::setNote(int index, int note) {
     if (index >= 0 && index < anzahlNoten) {
-        noten[index] = note; // Setze die Note an der gegebenen Stelle
+        noten[index] = note; 
     }
 }
 

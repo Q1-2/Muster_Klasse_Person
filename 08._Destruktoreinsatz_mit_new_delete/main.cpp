@@ -7,15 +7,13 @@ int main() {
     student.setNote(2, 3); // Setze die dritte Note
     student.ausgeben(); // Gebe die Noten aus
 
- /*
- Vermeide den manuellen Destruktoraufruf :
-    Du solltest den Destruktor nicht manuell aufrufen, 
-    weil das Objekt weiterhin existiert, 
-    und das kann zu undefiniertem Verhalten führen.
-*/
-    student.~Student(); 
+    student.~Student(); // Vermeide den manuellen Destruktoraufruf!
+    
+    cout << student.getName() << endl;
+    student.setName("Peter");
+    cout << student.getName() << endl;
 
-   
+    // Wie kann man das Problem lösen?
 
     return 0;
 }
