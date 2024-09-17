@@ -9,8 +9,8 @@ using namespace std;
 wenn ein Objekt ohne Argumente erstellt wird.
 Hier setzen wir den Namen auf "Unbekannt" und das Alter auf 0.*/
 Person::Person() {
-    name = "Unbekannt"; // Setze den Namen auf "Unbekannt"
-    alter = 0; // Setze das Alter auf 0
+    name = "Unbekannt"; 
+    alter = 0; 
 }
 
 // Parameterkonstruktor
@@ -18,8 +18,8 @@ Person::Person() {
 um ein Objekt mit bestimmten Werten zu initialisieren.
 Er nimmt zwei Parameter(Name und Alter) und weist sie den Attributen zu.*/
 Person::Person(string n, int a) {
-    name = n; // Setze den Namen
-    alter = a; // Setze das Alter
+    name = n; 
+    alter = a; 
 }
 
 // Kopierkonstruktor

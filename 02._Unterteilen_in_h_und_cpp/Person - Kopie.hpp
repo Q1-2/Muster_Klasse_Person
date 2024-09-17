@@ -9,8 +9,8 @@ Das macht den Code übersichtlicher und modularer.
 
 class Person { // Definition der Klasse Person
 private:
-    std::string name; // Attribut für den Namen
-    int alter; // Attribut für das Alter
+    std::string name; 
+    int alter; 
 
 public:
     Person(std::string n, int a); // Konstruktor
