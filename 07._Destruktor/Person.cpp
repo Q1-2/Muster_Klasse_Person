@@ -7,6 +7,8 @@ using namespace std;
 Person::Person() {
     name = "Unbekannt";
     setAlter(0); 
+
+    cout << "Konstruktor wurde aufgerufen von Objekt: " << this << endl;
 }
 
 Person::Person(string n, int a) {
@@ -37,6 +39,7 @@ Person::~Person()
 {
     // Hier kannst du Ressourcen freigeben, wenn nötig
     // Zum Beispiel: delete[] dynamischerSpeicher;
+    cout << "Destruktor wurde aufgerufen von Objekt:  " << this << endl;
 }
 
 string Person::getName() const {
